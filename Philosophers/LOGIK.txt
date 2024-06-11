@@ -1,0 +1,48 @@
+
+
+start simu : 178464541351
+
+
+printf("I AM PROCESS %d!\n", i);
+printf("%d <-- %d --> %d\n\n", m_thread->tab[i].left->ph_id, 
+m_thread->tab[i].ph_id, m_thread->tab[i].right->ph_id );
+
+
+
+	// void	mutex_print(t_threads	*m_thread, int i, char c)
+// {
+// 	handle_mutex(m_thread, &m_thread->print_m, LOCK);
+// 	if (c == 'E' && !m_thread->simulation_ended)
+// 	{
+// 		printf("%ld %d is eating\n", write_time('m') - m_thread->simulation_start, 
+// 			m_thread->tab[i].ph_id);
+// 		handle_mutex(m_thread, &m_thread->print_m, UNLOCK);
+// 		usleep(m_thread->t_eat * 1000);
+// 		m_thread->tab[i].last_meal = write_time('m');
+// 		m_thread->tab[i].ate += 1;
+// 		if (m_thread->tab[i].ate == m_thread->max_meals)
+// 		{
+// 			m_thread->tab[i].full = true; // mutex
+// 			m_thread->cpt_full += 1;
+// 		}
+// 		return ;
+// 	}
+// 	else if (c == 'T' && !m_thread->simulation_ended)
+// 		printf("%ld %d is thinking\n", write_time('m') - m_thread->simulation_start,
+// 			m_thread->tab[i].ph_id);
+// 	else if (c == 'S' && !m_thread->simulation_ended)
+// 		printf("%ld %d is sleeping\n", write_time('m') - m_thread->simulation_start,
+// 			m_thread->tab[i].ph_id);
+// 	handle_mutex(m_thread, &m_thread->print_m, UNLOCK);
+// }
+
+
+
+
+
+
+
+
+
+printf("I AM PROCESS %d!\n", ph->ph_id);
+printf("%d <-- %d --> %d\n\n", ph->left->ph_id,ph->ph_id, ph->right->ph_id );
